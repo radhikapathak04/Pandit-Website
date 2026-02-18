@@ -44,7 +44,7 @@ export default function KundaliVishleshan() {
           ⭐ विश्लेषण में शामिल
         </h2>
 
-        <ul className="space-y-3">
+        <ul className="grid md:grid-cols-2 gap-4">
           {[
             "जन्म कुंडली अध्ययन",
             "ग्रह स्थिति विश्लेषण",
@@ -52,15 +52,22 @@ export default function KundaliVishleshan() {
             "दोष एवं उपाय सुझाव",
             "भविष्य फल एवं समाधान",
           ].map((item, index) => (
-            <li key={index}
-              className="flex items-center gap-3 bg-orange-50 p-3 rounded-lg shadow-sm">
-              <span className="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">
-                ✓
-              </span>
-              <span className="text-gray-700 font-medium">{item}</span>
-            </li>
-          ))}
-        </ul>
+    <li
+      key={index}
+      className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl shadow-sm hover:shadow-lg transition"
+    >
+      {/* Number Circle */}
+      <span className="bg-orange-500 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold">
+        {index + 1}
+      </span>
+
+      {/* Text */}
+      <span className="text-gray-900 font-semibold text-lg">
+        {item}
+      </span>
+    </li>
+  ))}
+</ul>
 
         <ActionButtons title="कुंडली विश्लेषण" />
 

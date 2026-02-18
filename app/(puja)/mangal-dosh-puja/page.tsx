@@ -46,7 +46,7 @@ export default function MangalDoshPuja() {
           ✨ पूजन में शामिल विधियाँ
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <ul className="grid md:grid-cols-2 gap-4">
           {[
             "गणेश पूजन",
             "मंगल ग्रह शांति जाप",
@@ -54,15 +54,23 @@ export default function MangalDoshPuja() {
             "नवग्रह पूजन",
             "दोष निवारण अनुष्ठान",
             "पूर्णाहुति एवं आशीर्वाद",
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-orange-50 p-4 rounded-xl shadow hover:shadow-lg transition"
-            >
-              {item}
-            </div>
-          ))}
-        </div>
+          ].map((item, index) => (
+    <li
+      key={index}
+      className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl shadow-sm hover:shadow-lg transition"
+    >
+      {/* Number Circle */}
+      <span className="bg-orange-500 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold">
+        {index + 1}
+      </span>
+
+      {/* Text */}
+      <span className="text-gray-900 font-semibold text-lg">
+        {item}
+      </span>
+    </li>
+  ))}
+</ul>
 
         {/* ✅ Buttons */}
         <ActionButtons title="मंगल दोष पूजन" />

@@ -50,27 +50,37 @@ export default function BaglamukhiHavan() {
         </div>
 
         {/* ===== Ritual Section ===== */}
-        <h2 className="text-2xl font-bold mt-16 mb-6 text-orange-700 border-l-4 border-orange-500 pl-4">
-          🪔 हवन में शामिल विधियाँ
-        </h2>
+        {/* ===== Ritual Section ===== */}
+<h2 className="text-2xl font-bold mt-16 mb-6 text-orange-700 border-l-4 border-orange-500 pl-4">
+  🪔 हवन में शामिल विधियाँ
+</h2>
 
-        <div className="grid md:grid-cols-2 gap-4">
-          {[
-            "माँ बगलामुखी पूजन",
-            "विशेष मिर्ची हवन",
-            "शत्रु बाधा निवारण मंत्र जाप",
-            "नजर दोष शांति",
-            "सुरक्षा एवं विजय आशीर्वाद",
-            "पूर्णाहुति एवं प्रसाद",
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="bg-orange-50 p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition duration-300"
-            >
-              {item}
-            </div>
-          ))}
-        </div>
+<ul className="grid md:grid-cols-2 gap-4">
+  {[
+    "माँ बगलामुखी पूजन",
+    "विशेष मिर्ची हवन",
+    "शत्रु बाधा निवारण मंत्र जाप",
+    "नजर दोष शांति",
+    "सुरक्षा एवं विजय आशीर्वाद",
+    "पूर्णाहुति एवं प्रसाद",
+  ].map((item, index) => (
+    <li
+      key={index}
+      className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl shadow-sm hover:shadow-lg transition"
+    >
+      {/* Number Circle */}
+      <span className="bg-orange-500 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold">
+        {index + 1}
+      </span>
+
+      {/* Text */}
+      <span className="text-gray-900 font-semibold text-lg">
+        {item}
+      </span>
+    </li>
+  ))}
+</ul>
+
 
         {/* ✅ Common Buttons */}
                 <ActionButtons title="भात पूजन" />

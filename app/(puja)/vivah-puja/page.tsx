@@ -54,7 +54,7 @@ export default function VivahPuja() {
           🪔 विवाह पूजन में शामिल
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <ul className="grid md:grid-cols-2 gap-4">
   {[
     "शुभ मुहूर्त निर्धारण",
     "गणेश पूजन",
@@ -63,20 +63,22 @@ export default function VivahPuja() {
     "हवन",
     "आशीर्वाद एवं पूर्णाहुति",
   ].map((item, index) => (
-    <div
+    <li
       key={index}
-      className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition duration-300"
+      className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl shadow-sm hover:shadow-lg transition"
     >
-      <span className="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">
-        ✓
+      {/* Number Circle */}
+      <span className="bg-orange-500 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold">
+        {index + 1}
       </span>
 
-      <span className="text-gray-700 font-medium">
+      {/* Text */}
+      <span className="text-gray-900 font-semibold text-lg">
         {item}
       </span>
-    </div>
+    </li>
   ))}
-</div>
+</ul>
 
 
         {/* ===== MODE ===== */}
