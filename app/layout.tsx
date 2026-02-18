@@ -1,4 +1,5 @@
 import FloatingButtons from "./components/FloatingButtons";
+import ClientOnly from "./components/ClientOnly";
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
   title: "Ujjain Pandit Ji | Online & Offline Puja Services",
   description:
     "Ujjain ke anubhavi Pandit Ji dwara Vivah, Griha Pravesh, Dosh Nivaran aur sabhi prakar ki puja online aur offline uplabdh.",
+  verification: {
+    google: "zKnN4bIAU1B5aLdlyT2rH30eY5qdWZIv2mtUW3p91dA",
+  },
 };
 
 export default function RootLayout({
@@ -32,8 +36,10 @@ export default function RootLayout({
       >
         {children}
 
-        {/* ✅ Floating Buttons (ONLY HERE) */}
-        <FloatingButtons />
+        {/* ✅ Floating Buttons FIX */}
+        <ClientOnly>
+          <FloatingButtons />
+        </ClientOnly>
 
       </body>
     </html>
