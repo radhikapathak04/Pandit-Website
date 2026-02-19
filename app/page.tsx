@@ -47,6 +47,28 @@ export default function Home() {
     प. प्रफुल्ल शर्मा
   </span>
 </h1>
+{/* ===== Quick Call Services ===== */}
+<div className="mt-8 flex flex-wrap gap-4 justify-center">
+
+  {[
+    "काल सर्प दोष",
+    "पितृ दोष",
+    "मंगल दोष",
+    "तंत्र क्रिया",
+  ].map((item, index) => (
+    <a
+      key={index}
+      href="tel:8878875554"
+      className="bg-orange-100 hover:bg-orange-500 hover:text-white 
+      text-orange-700 font-semibold px-5 py-2 rounded-full 
+      transition duration-300 shadow-md"
+    >
+      {item}
+    </a>
+  ))}
+
+</div>
+
 
 {/* ✅ Phone Numbers */}
 <div className="mt-4 flex flex-col items-center gap-2">
@@ -90,7 +112,7 @@ export default function Home() {
             </Link>
 
             <a
-              href="tel:+917000503090"
+              href="tel:+918878875554"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
             >
               📞 Direct Call
@@ -132,7 +154,7 @@ export default function Home() {
 
 function ServiceCard({ title, link }: { title: string; link: string }) {
 
-  const whatsappNumber = "917000503090";
+  const whatsappNumber = "918878875554";
   const message = `🙏 नमस्ते, मुझे ${title} के बारे में जानकारी चाहिए।`;
 
   const whatsappURL =
@@ -159,7 +181,7 @@ function ServiceCard({ title, link }: { title: string; link: string }) {
         </Link>
 
         <a
-          href="tel:+917000503090"
+          href="tel:+918878875554"
           className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
         >
           📞 Direct Call

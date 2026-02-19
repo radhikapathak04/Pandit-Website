@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+//import Link from "next/link";
 
 import Image from "next/image";
 
@@ -28,16 +28,13 @@ export default function PaymentPage() {
         <p className="mt-4 font-medium">
           UPI ID: yourupi@okaxis
         </p>
-
-        <Link
-  href="/payment"
+<a
+  href="paytmmp://pay?pa=8878875554@paytm"
   className="bg-orange-600 text-white px-6 py-3 rounded-lg text-center"
 >
-  💳 Payment करें
-</Link>
-
-
-      </div>
+  📲 Open Paytm & Pay
+</a>
+ </div>
 
     </main>
   );

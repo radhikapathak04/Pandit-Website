@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export default function ActionButtons({ title }: { title: string }) {
 
-  const phone = "+917000503090";
+  const phone = "+918878875554";
 
   const message = `🙏 नमस्ते, मुझे ${title} के बारे में जानकारी चाहिए।`;
 
   const whatsappURL =
-    `https://wa.me/917000503090?text=${encodeURIComponent(message)}`;
+    `https://wa.me/918878875554?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">

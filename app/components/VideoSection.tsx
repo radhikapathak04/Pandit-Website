@@ -32,6 +32,18 @@ export default function VideoSection() {
             <source src="/vyapar2.mp4" type="video/mp4" />
           </video>
         </div>
+        {/* Video 3 */}
+        <div className="relative group">
+          <div className="absolute -inset-1 bg-orange-400 rounded-2xl blur opacity-30 group-hover:opacity-60 transition"></div>
+
+          <video
+            controls
+            preload="metadata"
+            className="relative w-full rounded-2xl shadow-2xl"
+          >
+            <source src="/vyapar3.mp4" type="video/mp4" />
+          </video>
+        </div>
 
       </div>
     </div>

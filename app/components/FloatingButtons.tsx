@@ -3,7 +3,7 @@
 export default function FloatingButtons() {
 
   // ✅ Phone Number (without +)
-  const phoneNumber = "917000503090";
+  const phoneNumber = "918878875554";
 
   // ✅ Auto WhatsApp Message
   const message = encodeURIComponent(

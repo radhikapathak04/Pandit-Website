@@ -12,7 +12,7 @@ export default function Kundali() {
 
       <div className="text-center mt-6">
         <a
-          href="https://wa.me/917000503090"
+          href="https://wa.me/918878875554"
           target="_blank"
           className="bg-orange-600 text-white px-6 py-3 rounded-lg"
         >
