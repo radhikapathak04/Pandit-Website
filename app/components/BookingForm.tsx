@@ -73,11 +73,14 @@ export default function BookingForm() {
         >
           <option value="">कौन सा पूजन?</option>
           <option>विवाह पूजन</option>
-          <option>गृह प्रवेश पूजन</option>
-          <option>दोष निवारण पूजन</option>
+          <option>गृह प्रवेश एवं वास्तु पूजन</option>
+          <option>काल सर्प दोष निवारण एवं शांति पूजन</option>
           <option>बगलामुखी मिर्ची हवन</option>
-          <option>संतान प्राप्ति पूजन</option>
-          <option>व्यापार एवं वाहन पूजन</option>
+          <option>संतान प्राप्ति एवं संस्कार पूजन</option>
+          <option>भात पूजन</option>
+          <option>मंगल दोष पूजन</option>
+          <option>कुंडली विश्लेषण पूजन</option>
+          <option>त्योहार विशेष पूजन</option>
         </select>
 
         {/* Date */}

@@ -2,6 +2,29 @@ import Link from "next/link";
 import Reviews from "./components/Reviews";
 import Image from "next/image";
 import Gallery from "./components/Gallery";
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Pt Praful Sharma - Pandit in Ujjain",
+      image: "https://gurujiujjain.com/pandit2.jpg",
+      url: "https://gurujiujjain.com",
+      telephone: "+918878875554",
+      priceRange: "₹₹",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Ujjain",
+        addressRegion: "Madhya Pradesh",
+        addressCountry: "IN"
+      },
+      sameAs: [
+        "https://wa.me/918878875554"
+      ]
+    }),
+  }}
+/>
 
 /* ================= SERVICE CARD COMPONENT ================= */
 function ServiceCard({ title, link }: { title: string; link: string }) 
